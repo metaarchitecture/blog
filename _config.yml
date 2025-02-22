@@ -1,0 +1,102 @@
+# Site settings
+title: Metarchia Blog
+SEOTitle: Metarchia 的博客 | Metarchia Blog
+header-img: img/home-bg.jpg
+email: 1399472841@qq.com
+description: "Let's do some interesting shit!"
+keyword: "Metarchia, metarchia, @metarchia, Metarchia 的博客, Metarchia Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
+url: "https://metarchitecture.space" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+weibo_username: metarchia
+zhihu_username: metarchia
+github_username: metarchia
+twitter_username: metarchia
+#facebook_username:  metarchia
+#linkedin_username:  firstname-lastname-idxxxx
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude:
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+  ]
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Disqus settings
+disqus_username: metarchia
+
+# Netease settings
+netease_comment: false
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+ga_domain: metarchitecture.space
+
+# Sidebar settings
+sidebar: true # whether or not using Sidebar.
+sidebar-about-description: "Let's do some interesting shit! <br> CEO/CTO/CFO/UFO @metarchitecture"
+sidebar-avatar: https://avatars.githubusercontent.com/u/56643309?s=400&u=a86d339833b2037157b032843739843cfba32f21&v=4 # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# Featured Tags
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+# Friends
+friends:
+  [
+    { title: "METARCHIABOT1", href: "https://metarchitecture.space" },
+    { title: "METARCHIABOT2", href: "https://metarchitecture.space" },
+    { title: "METARCHIABOT3", href: "https://metarchitecture.space" },
+    { title: "METARCHIABOT4", href: "https://metarchitecture.space" },
+    { title: "METARCHIABOT5", href: "https://metarchitecture.space" },
+    { title: "METARCHIABOT6", href: "https://metarchitecture.space" },
+    { title: "METARCHIABOT7", href: "https://www.coze.com" },
+    { title: "METARCHIABOT8", href: "https://developers.notion.com" },
+  ]
